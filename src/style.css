@@ -1,0 +1,229 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: #f4f4f0;
+  color: #1a1a1a;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: #111;
+}
+
+h2 {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #888;
+  margin-bottom: 1rem;
+}
+
+.app-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.app-header p {
+  font-size: 0.875rem;
+  color: #666;
+  margin-top: 0.25rem;
+}
+
+.exercicios {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.card-numero {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  background: #111;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.card-titulo {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  color: #111;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="number"] {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 0.875rem;
+  outline: none;
+  width: 100%;
+  max-width: 280px;
+  transition: border-color 0.15s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border-color: #555;
+}
+
+/* Buttons */
+button {
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s;
+}
+
+button:hover {
+  background: #333;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+button.secondary {
+  background: #f0f0f0;
+  color: #333;
+}
+
+button.secondary:hover {
+  background: #e0e0e0;
+}
+
+/* Saudação */
+.saudacao-output {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #111;
+  margin: 1rem 0;
+}
+
+.saudacao-output span {
+  color: #2563eb;
+}
+
+/* Contador */
+.contador-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.contador-valor {
+  font-size: 3rem;
+  font-weight: 700;
+  min-width: 80px;
+  text-align: center;
+  color: #111;
+}
+
+.btn-counter {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  padding: 0;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.alerta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #ecfdf5;
+  color: #065f46;
+  border: 1px solid #6ee7b7;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+.limite-info {
+  font-size: 0.8rem;
+  color: #999;
+  margin-top: 0.5rem;
+}
+
+/* Integração */
+.integracao-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+@media (max-width: 520px) {
+  .integracao-grid { grid-template-columns: 1fr; }
+}
+
+.componente-box {
+  background: #f8f8f8;
+  border: 1px dashed #ccc;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.componente-tag {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: #999;
+  margin-bottom: 0.75rem;
+}
+
+.tema-display {
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: all 0.3s;
+}
+
+.tema-claro  { background: #fffef0; color: #5c4a00; border: 1px solid #e5d87a; }
+.tema-escuro { background: #1e1e1e; color: #e0e0e0; border: 1px solid #444; }
+.tema-azul   { background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; }
+.tema-verde  { background: #f0fdf4; color: #166534; border: 1px solid #bbf7d0; }
+
+.btn-tema {
+  margin-right: 6px;
+  margin-bottom: 6px;
+  padding: 6px 14px;
+  font-size: 0.8rem;
+  border-radius: 6px;
+}
