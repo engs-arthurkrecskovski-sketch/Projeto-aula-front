@@ -9,6 +9,6 @@ defineProps({
 
 <template>
   <div class="saudacao-output">
-    Olá, <span>{{ nome }}</span>! Boas-vindas ao Vue 3 🎉
+    Olá, <span>{{ nome }}</span>! Boas-vindas ao Vue 3 
   </div>
 </template>
